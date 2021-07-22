@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">    
+    <script type="text/javascript">
+    function uranai(){      
+      // let result = Math.ceil(Math.random()*10) + "0点"
+      let result = Math.ceil(Math.random()*10)
+      let star = "";
+      for(let i = 0; i < result; i++){
+        star+="★"
+      }
+      // let output = "<>"
+      document.getElementById("result").innerHTML = "<p>"+result+"0点！<br>"+star+"</p>"
+    }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- Content here -->
+        <h1>
+          <img src="./watermelon.svg" alt="watermelon" width="32px">
+          なつやすみのしゅくだい
+          <i class="fas fa-ice-cream"></i>
+        </h1>            
+        <ol>
+          <li>
+            <input class="form-check-input" type="checkbox" value="" id="check1">
+            <label class="form-check-label" for="check1"></label>
+              なつやすみがんばりカード
+            </label>
+        </li>
+        <li>
+                  サマースキル
+                <ul>
+                  <input class="form-check-input" type="checkbox" value="" id="check2_1">
+                  <label class="form-check-label" for="check2_1"></label>
+                      こくご・さんすう
+                  </label>
+                </ul>
+                <ul>
+                  <input class="form-check-input" type="checkbox" value="" id="check2_2">
+                  <label class="form-check-label" for="check2_2"></label>
+                      チャレンジひらがな・チャレンジけいさん
+                  </label>
+                </ul>
+                <ul>
+                  <input class="form-check-input" type="checkbox" value="" id="check2_3">
+                  <label class="form-check-label" for="check2_3"></label>
+                      いまなんじ
+                  </label>
+                </ul>
+            </li>
+            <li>
+              えにっき
+              <ul>
+                <input class="form-check-input" type="checkbox" value="" id="check3_1">
+                <label class="form-check-label" for="check3_1"></label>
+                    1
+                </label>
+              </ul>
+              <ul>
+                <input class="form-check-input" type="checkbox" value="" id="check3_2">
+                <label class="form-check-label" for="check3_2"></label>
+                   2
+                </label>
+              </ul>
+            </li>
+            <li>
+              <input class="form-check-input" type="checkbox" value="" id="check4">
+              <label class="form-check-label" for="check4"></label>
+                たしざんカード・ひきざんカード
+              </label>
+          </li>
+          <li>
+            <input class="form-check-input" type="checkbox" value="" id="check5">
+            <label class="form-check-label" for="check5"></label>
+              どくしょのきろく・おすすめほんしょうかいカード
+            </label>
+          </li> 
+          <li>
+            <input class="form-check-input" type="checkbox" value="" id="check6">
+            <label class="form-check-label" for="check6"></label>
+              とうきょうタイムライン
+            </label>
+        </li>
+        <li>
+          あざがお
+        <ul>
+          <input class="form-check-input" type="checkbox" value="" id="check7_1">
+          <label class="form-check-label" for="check7_1"></label>
+              かんさつカード
+          </label>
+        </ul>
+        <ul>
+          <input class="form-check-input" type="checkbox" value="" id="check7_2">
+          <label class="form-check-label" for="check7_2"></label>
+              おせわ
+          </label>
+        </ul>
+        <ul>
+          <input class="form-check-input" type="checkbox" value="" id="check7_3">
+          <label class="form-check-label" for="check7_3"></label>
+              はなカード
+          </label>
+        </ul>
+    </li>        
+        <li>
+          <input class="form-check-input" type="checkbox" value="" id="check8">
+          <label class="form-check-label" for="check8"></label>
+            なつの1ぎょうにっき
+          </label>
+      </li>
+</ol>
+
+
+        <button type="button" class="btn btn-primary" onclick="uranai()">きょうのうらない</button>
+        <div id="result"></div>
+    </div>      
+</body>
