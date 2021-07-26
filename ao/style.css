@@ -1,3 +1,17 @@
-.container{
+.title {
+    background: linear-gradient(transparent 20%, pink 50%);
+    width: fit-content;
+}
+
+.outer {
     margin: 24px;
+}
+
+.list {
+    font-size: larger;
+    margin-top: 24px;
+}
+
+.uranai {
+    margin-top: 32px;
 }
